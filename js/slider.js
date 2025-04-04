@@ -15,6 +15,8 @@ menuItems.forEach((item) => {
 
 slider.addEventListener("scroll", () => {
   const index = Math.round(slider.scrollTop / window.innerHeight);
-  menuItems.forEach((i) => i.classList.remove("active"));
-  menuItems[index].classList.add("active");
+  menuItems.forEach(i => i.classList.remove("active"));
+  if (menuItems[index]) {
+    menuItems[index].classList.add("active");
+  }
 });

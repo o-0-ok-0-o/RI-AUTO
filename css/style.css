@@ -1,5 +1,5 @@
 * {
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -28,13 +28,13 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 70px;
+  padding: 0px 70px;
   background: transparent;
   z-index: 10;
   box-sizing: border-box;
 }
 .logo {
-  height: 70px;
+  height: 120px;
   cursor: pointer;
 }
 .menu {
@@ -45,7 +45,8 @@ html {
 }
 .menu-item {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
   position: relative;
   cursor: pointer;
   transition: color 0.3s;
@@ -55,25 +56,20 @@ html {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 4px;
   bottom: -5px;
   left: 0;
   background: -webkit-linear-gradient(90deg, #00ff00, #8eff8e);
   background: linear-gradient(90deg, #00ff00, #8eff8e);
   transition: width 0.3s ease;
+  opacity: 0;
 }
 .menu-item:hover::after,
 .menu-item.active::after {
   width: 100%;
+  opacity: 1;
 }
-.menu-item:hover,
-.menu-item.active {
-  background: -webkit-linear-gradient(90deg, #00ff00, #8eff8e);
-  background: linear-gradient(90deg, #00ff00, #8eff8e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: inherit;
-}
+
 .socials {
   display: flex;
   gap: 30px;
@@ -95,6 +91,7 @@ html {
   height: 100vh;
   width: 100vw;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   overflow-y: scroll;
   overflow-x: hidden;
 }
