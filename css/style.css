@@ -1,6 +1,5 @@
 * {
   font-size: 22px;
-  font-family: "Roboto", sans-serif;
 }
 
 body,
@@ -102,4 +101,9 @@ html {
   background-position: center;
   scroll-snap-align: start;
   transition: background-image 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
