@@ -1,5 +1,11 @@
+@font-face{
+  font-family: 'PALUI';
+  src: url('../font/PaluiSPDemo-Bold.otf');
+}
+
 * {
-  font-size: 22px;
+  font-family: 'PALUI', sans-serif;
+  font-size: 16px;
 }
 
 body,
