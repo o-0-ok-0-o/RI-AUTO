@@ -235,9 +235,11 @@ body {
     height: 100%;
     z-index: 1;
     overflow: hidden;
+    background-color: black;
 }
 
 .background {
+    background-color: black;
     position: absolute;
     top: 0;
     left: 0;
@@ -247,7 +249,7 @@ body {
     background-position: center;
     opacity: 0;
     /* transform: scale(1.2); */
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 1.6s ease, transform 1.6s ease;
     will-change: opacity, transform;
     pointer-events: none;
     filter: brightness(70%);
