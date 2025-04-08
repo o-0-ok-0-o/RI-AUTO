@@ -1,7 +1,18 @@
+@font-face{
+    font-family: 'PALUI';
+    src: url('../font/PaluiSPDemo-Bold.otf');
+}
+
+@font-face {
+    font-family: 'SAMSON';
+    src: url(../font/Samson.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PALUI', sans-serif;
 }
 
 body {
@@ -41,12 +52,12 @@ body {
 .menu-semicircle {
     width: 370px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0);
     border-radius: 0 100% 100% 0 / 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 50px 10px 35px 30px rgb(0, 0, 0);
 }
 
 /* Left Menu */
@@ -56,7 +67,7 @@ body {
     gap: 20px;
     padding-right: 50px;
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
 }
 
 .menu-item {
@@ -69,7 +80,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 10px;
     /* white-space: nowrap; */
     position: relative;
     transform-origin: left center;
@@ -111,7 +122,7 @@ body {
     backdrop-filter: blur(5px);
     border-radius: 20px;
     padding: 30px;
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     display: none;
     flex-direction: column;
@@ -136,7 +147,7 @@ body {
 }
 
 .service-card {
-    background: white;
+    background: #1f472eb8;
     border-radius: 10px;
     overflow: hidden;
     width: calc(25% - 15px);
@@ -156,7 +167,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f5f5f5;
     padding: 10px;
 }
 
@@ -171,36 +181,49 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    line-height: 1.5;
+    position: relative;
 }
 
 .service-price {
-    font-size: 18px;
+    font-family: 'SAMSON', sans-serif;
+    font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.service-price span {
+    font-family: 'SAMSON', sans-serif;
+    font-size: 28px;
 }
 
 .service-points {
-    font-size: 12px;
-    color: #777;
+    font-size: 10px;
+    color: white;
 }
 
 .service-description {
-    font-size: 14px;
+    font-size: 10px;
     margin-top: 5px;
-    color: #333;
+    color: white;
     min-height: 60px;
 }
 
 .service-more {
-    color: #00cc00;
-    font-size: 14px;
-    margin-top: 5px;
+    padding: 3px 5px;
+    background-color: #4BAD4F;
+    color: white;
+    font-size: 12px;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 5px;
+    transition: .3s;
+    text-align: center;
 }
 
 .service-more:hover {
-    text-decoration: underline;
+    transform: scale(1.05);
 }
 
 /* Background Images Carousel - Circular Animation */
@@ -223,7 +246,7 @@ body {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transform: scale(1.2) rotate(-3deg);
+    /* transform: scale(1.2); */
     transition: opacity 0.6s ease, transform 0.6s ease;
     will-change: opacity, transform;
     pointer-events: none;
@@ -232,13 +255,13 @@ body {
 
 .background.active {
     opacity: 1;
-    transform: scale(1) rotate(0deg);
+    /* transform: scale(1); */
     z-index: 2;
 }
 
 .background.prev {
     opacity: 0;
-    transform: scale(0.8) rotate(3deg);
+    /* transform: scale(0.8); */
     z-index: 1;
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
