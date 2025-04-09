@@ -1,274 +1,864 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Техцентр</title>
-    <link rel="shortcut icon" href="../img/logo/Logo.PNG" type="image/png">
-    <link rel="stylesheet" href="../css/teh-senter.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="../img/logo/Logo.PNG" type="image/png" />
+    <link rel="stylesheet" href="../css/teh-senter.css" />
+    <style></style>
+  </head>
+  <body>
     <div class="container">
-        <!-- Logo -->
-        <div class="logo">
-            <a href="../index.html"><img src="../img/logo/Logo.PNG" alt="Auto Logo"></a>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../img/logo/Logo.PNG" alt="Auto Logo"
+        /></a>
+      </div>
+
+      <!-- Left Menu Semi-circle -->
+      <div class="menu-container">
+        <div class="menu-semicircle">
+          <div class="left-menu">
+            <div class="menu-item active" data-category="fluids" data-index="0">
+              <span>ЖИДКОСТИ И ФИЛЬТРЫ</span>
+            </div>
+            <div class="menu-item" data-category="diagnostics" data-index="1">
+              <span>ДИАГНОСТИКА</span>
+            </div>
+            <div class="menu-item" data-category="brakes" data-index="2">
+              <span>ТОРМОЗНАЯ СИСТЕМА</span>
+            </div>
+            <div class="menu-item" data-category="engine" data-index="3">
+              <span>ДВИГАТЕЛЬ</span>
+            </div>
+            <div class="menu-item" data-category="exhaust" data-index="4">
+              <span>ВЫХЛОПНАЯ СИСТЕМА</span>
+            </div>
+            <div class="menu-item" data-category="chassis" data-index="5">
+              <span>ХОДОВАЯ ЧАСТЬ</span>
+            </div>
+            <div class="menu-item" data-category="maintenance" data-index="6">
+              <span>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ(ТО)</span>
+            </div>
+            <div class="menu-item" data-category="tires" data-index="7">
+              <span>ШИНОМОНТАЖ</span>
+            </div>
+            <div class="menu-item" data-category="wheel" data-index="8">
+                <span>Рулевое управление</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content with Price Lists -->
+      <div class="main-content">
+        <!-- Fluids Price List (Default Active) -->
+        <div class="price-list active" data-category="fluids">
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="../img/техцентр/Жидкости и фильтры/масло-масляной фильтр ДВС.png"
+                alt="Замена масла и масляного фильтра"
+              />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена масла/масляного фильтра ДВС
+              </div>
+              <div class="service-price">от <span>700</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="../img/техцентр/Жидкости и фильтры/тормозная жидкость.png"
+                alt="Замена тормозной жидкости"
+              />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена тормозной жидкости</div>
+              <div class="service-price">от <span>1000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="../img/техцентр/Жидкости и фильтры/Масло в акпп мкпп ркпп.png"
+                alt="Замена трансмиссионного масла"
+              />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена масла в АКПП/МКПП/РКПП
+              </div>
+              <div class="service-price">от <span>1200</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="../img/техцентр/Жидкости и фильтры/охлаждающая жидкость.png"
+                alt="Замена охлаждающей жидкости"
+              />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена охлаждающей жидкости</div>
+              <div class="service-price">от <span>1000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Жидкости и фильтры/Воздушный фильтр.png" alt="Воздушный фильтр" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена воздушного фильтра</div>
+              <div class="service-price">от <span>200</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Жидкости и фильтры/Салонный фильтр.png" alt="Салонный фильтр" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена салонного фильтра</div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Жидкости и фильтры/Масло в редукторе.png" alt="Система охлаждения" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена масла в редукторе</div>
+              <div class="service-price">от <span>700</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Жидкости и фильтры/Жидкость ГУР.png" alt="ГУР" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена жидкости ГУР</div>
+              <div class="service-price">от <span>1000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Жидкости и фильтры/Топливный фильтр.png" alt="Топливный фильтр" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена топливных фильтров дизельных/бензиновых двигателей
+              </div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Жидкости и фильтры/Масло в раздаточной коробке.png" alt="Раздаточная коробка" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена масла в раздаточной коробке
+              </div>
+              <div class="service-price">от <span>700</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
         </div>
 
-        <!-- Left Menu Semi-circle -->
-        <div class="menu-container">
-            <div class="menu-semicircle">
-                <div class="left-menu">
-                    <div class="menu-item active" data-category="fluids" data-index="0">
-                        <span>ЖИДКОСТИ И ФИЛЬТРЫ</span>
+        <!-- Diagnostics Price List -->
+        <div class="price-list" data-category="diagnostics">
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="../img/техцентр/Диагностика/компьютерная диагностика.png"
+                alt="Компьютерная диагностика"
+              />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Компьютерная диагностика</div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="../img/техцентр/Диагностика/диагностика ходовой части.png"
+                alt="Диагностика подвески"
+              />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Диагностика ходовой части</div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="../img/техцентр/Диагностика/диагностика двигателя.png"
+                alt="Диагностика двигателя"
+              />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Диагностика двигателя</div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="../img/техцентр/Диагностика/Комплексная диагностика.png"
+                alt="Комплексная диагностика"
+              />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Комплексная диагностика</div>
+              <div class="service-price">от <span>1500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brakes Price List -->
+        <div class="price-list" data-category="brakes">
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Тормозная система/Тормозные колодки.png" alt="Замена колодок" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена колодок</div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Тормозная система/Тормозные диски.png" alt="Замена дисков" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена тормозных дисков</div>
+              <div class="service-price">от <span>700</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Тормозная система/Тормозные шланги.png" alt="Тормозные шланги" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена тормозных шлангов</div>
+              <div class="service-price">от <span>1000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Тормозная система/Тормозные суппорты.png" alt="Суппорт" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена тормозных суппортов</div>
+              <div class="service-price">от <span>1000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Engine services -->
+        <div class="price-list" data-category="engine">
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Прокладка ГБЦ.png" alt="Прокладка ГБЦ" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена прокладки ГБЦ</div>
+              <div class="service-price">от <span>10000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Прокладка поддона.png" alt="Прокладка поддона" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена прокладки поддона</div>
+              <div class="service-price">от <span>2000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Сальники.png" alt="Сальники" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена сальников</div>
+              <div class="service-price">от <span>1000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Свечи.png" alt="Свечи" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена свечей</div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Маслосъёмные колпачки.png" alt="Маслосъёмные колпачки" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена маслосъёмных колпачков
+              </div>
+              <div class="service-price">от <span>3000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Капитальный ремонт двигателя.png" alt="Капитальный ремонт" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Капитальный ремонт двигателя
+              </div>
+              <div class="service-price">от <span>25000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Аппаратная чистка форсунок.png" alt="Чистка форсунок" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Аппаратная чистка форсунок</div>
+              <div class="service-price">от <span>1500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Прокладка клапанной крышки.png" alt="Клапанная крышка" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена прокладки клапанной крышки
+              </div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Катушка зажигания.png" alt="Катушки зажигания" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена катушек зажигания</div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Прокладки впускного-выпускного коллектора.png" alt="Коллектор" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена прокладки впускного/выпускного коллектора
+              </div>
+              <div class="service-price">от <span>1000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Ремень ГРМ.png" alt="Ремень ГРМ" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена ремня ГРМ</div>
+              <div class="service-price">от <span>1000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Цепь ГРМ.png" alt="Цепь ГРМ" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена цепи ГРМ</div>
+              <div class="service-price">от <span>3000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Двигатель/Форсунки.png" alt="Промывка форсунок" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Промывка форсунок</div>
+              <div class="service-price">от <span>2000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exhaust services -->
+        <div class="price-list" data-category="exhaust">
+          <div class="service-card full-width-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Выхлопная система/Выхлопная система.png" alt="Выхлопная система" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена выхлопной системы</div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chassis services -->
+        <div class="price-list" data-category="chassis">
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Диагностика ходовой части.png" alt="Диагностика ходовой" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Диагностика ходовой части</div>
+              <div class="service-price">от <span>500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Стойки передних амортизаторов.png" alt="Стойки амортизаторов" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена стоек передних амортизаторов
+              </div>
+              <div class="service-price">от <span>1500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Стойки задних амортизаторов.png" alt="Задние амортизаторы" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена стоек задних амортизаторов
+              </div>
+              <div class="service-price">от <span>1000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Стойка стабилизатора.png" alt="Стойки стабилизатора" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена стоек стабилизатора</div>
+              <div class="service-price">от <span>500</span> ₽/шт.</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Опорные подшипники.png" alt="Опорные подшипники" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена опорных подшипников</div>
+              <div class="service-price">от <span>1500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Наружний пыльник шруса.png" alt="Пыльник шруса" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена пыльника шруса наружного
+              </div>
+              <div class="service-price">от <span>1200</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Внутренний пыльник шруса.png" alt="Пыльник шруса внутренний" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена пыльника шруса внутреннего
+              </div>
+              <div class="service-price">от <span>1500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Передний ступичный подшипник.png" alt="Ступичный подшипник" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена ступичного подшипника (передний)
+              </div>
+              <div class="service-price">от <span>1500</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Задний ступичный подшипник.png" alt="Ступичный подшипник задний" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена ступичного подшипника (задний)
+              </div>
+              <div class="service-price">от <span>700</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Рычаг подвески.png" alt="Рычаги" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена рычагов</div>
+              <div class="service-price">от <span>1000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Балка подвески.png" alt="Балка" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена балки</div>
+              <div class="service-price">от <span>5000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="../img/техцентр/Ходовая часть/Шаровая опора.png" alt="Шаровые опоры" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">Замена шаровых опор</div>
+              <div class="service-price">от <span>700</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maintenance services (formerly Transmission) -->
+        <div class="price-list" data-category="maintenance">
+          <div class="service-card full-width-card">
+            <div class="service-image">
+              <img src="../img/техцентр/" alt="ТО" />
+            </div>
+            <div class="service-info">
+              <div class="service-description">
+                Замена масла в ДВС замена фильтров воздушный/салонный,
+                комплексная диагностика, подкачка давления в шинах проверка
+                световых приборов
+              </div>
+              <div class="service-price">от <span>5000</span> ₽</div>
+              <div class="service-more">Записаться</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tire services -->
+        <div class="price-list tire-price-list" data-category="tires">
+          <div class="tire-configurator">
+            <div class="configurator-section">
+              <div class="configurator-title">Балансировка + установка</div>
+              <div class="configurator-tables">
+                <div class="configurator-table">
+                  <div class="table-header">Легковые</div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R14" data-type="car">
+                      R<span>14</span> - <span>1 500</span>₽
                     </div>
-                    <div class="menu-item" data-category="diagnostics" data-index="1">
-                        <span>ДИАГНОСТИКА</span>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R15" data-type="car">
+                      R<span>15</span> - <span>1 500</span>₽
                     </div>
-                    <div class="menu-item" data-category="brakes" data-index="2">
-                        <span>ТОРМОЗНАЯ СИСТЕМА</span>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R16" data-type="car">
+                      R<span>16</span> - <span>1 600</span>₽
                     </div>
-                    <div class="menu-item" data-category="engine" data-index="3">
-                        <span>ДВИГАТЕЛЬ</span>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R17" data-type="car">
+                      R<span>17</span> - <span>1 800</span>₽
                     </div>
-                    <div class="menu-item" data-category="exhaust" data-index="4">
-                        <span>ВЫХЛОПНАЯ СИСТЕМА</span>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R18" data-type="car">
+                      R<span>18</span> - <span>2 000</span>₽
                     </div>
-                    <div class="menu-item" data-category="chassis" data-index="5">
-                        <span>ХОДОВАЯ ЧАСТЬ</span>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R19" data-type="car">
+                      R<span>19</span> - <span>2 000</span>₽
                     </div>
-                    <div class="menu-item" data-category="transmission" data-index="6">
-                        <span>КОРОБКА ПЕРЕДАЧ</span>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R20" data-type="car">
+                      R<span>20</span> - <span>2 000</span>₽
                     </div>
-                    <div class="menu-item" data-category="tires" data-index="7">
-                        <span>ШИНОМОНТАЖ</span>
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Main Content with Price Lists -->
-        <div class="main-content">
-            <!-- Fluids Price List (Default Active) -->
-            <div class="price-list active" data-category="fluids">
-                <div class="service-row">
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="../img/техцентр/жидкости и филтры/масло.png" alt="Замена масла и масляного фильтра">
-                        </div>
-                        <div class="service-info">                            
-                            <div class="service-description">Замена масла и масляного фильтра</div>                            
-                            <div class="service-price">от <span>1 190</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
+                <div class="configurator-table">
+                  <div class="table-header">Кроссоверы</div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell disabled"
+                      data-size="R14"
+                      data-type="suv"
+                    >
+                      -
                     </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="../img/техцентр/жидкости и филтры/тормозная жидкость.png" alt="Замена тормозной жидкости">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Замена тормозной жидкости</div>
-                            <div class="service-price">от <span>1 490</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell disabled"
+                      data-size="R15"
+                      data-type="suv"
+                    >
+                      -
                     </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="../img/техцентр/жидкости и филтры/трансмисионная жидкость.png" alt="Замена трансмиссионного масла">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Замена трансмиссионного масла</div>
-                            <div class="service-price">от <span>2 490</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R16" data-type="suv">
+                      R<span>16</span> - <span>1 800</span>₽
                     </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="../img/техцентр/жидкости и филтры/охлаждающая жидкость.png" alt="Замена охлаждающей жидкости">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Замена охлаждающей жидкости</div>
-                            <div class="service-price">от <span>1 790</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R17" data-type="suv">
+                      R<span>17</span> - <span>2 000</span>₽
                     </div>
-                    
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R18" data-type="suv">
+                      R<span>18</span> - <span>2 200</span>₽
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R19" data-type="suv">
+                      R<span>19</span> - <span>2 200</span>₽
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell" data-size="R20" data-type="suv">
+                      R<span>20</span> - <span>2 200</span>₽
+                    </div>
+                  </div>
                 </div>
-                <!-- <div class="service-row">
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="air-filter.png" alt="Воздушный фильтр">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Замена воздушного фильтра</div>
-                            <div class="service-price">от <span>590</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="cabin-filter.png" alt="Салонный фильтр">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Замена салонного фильтра</div>
-                            <div class="service-price">от <span>590</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="radiator.png" alt="Система охлаждения">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Аппаратная замена охлаждающей жидкости с промывкой системы</div>
-                            <div class="service-price">от <span>2 490</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="steering.png" alt="ГУР">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Аппаратная замена жидкости ГУР</div>
-                            <div class="service-price">от <span>1 390</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
-                    </div>
-                </div> -->
+              </div>
+              <div class="service-more">Записаться</div>
             </div>
 
-            <!-- Diagnostics Price List -->
-            <div class="price-list" data-category="diagnostics">
-                <div class="service-row">
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="../img/техцентр/диагностика/компьютерная диагностика.png" alt="Компьютерная диагностика">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Компьютерная диагностика</div>
-                            <div class="service-price">от <span>990</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
+            <div class="configurator-section">
+              <div class="configurator-title">
+                Шиномотаж + балансировка + установка
+              </div>
+              <div class="configurator-tables">
+                <div class="configurator-table">
+                  <div class="table-header">Легковые</div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R14"
+                      data-type="car-full"
+                    >
+                      R<span>14</span> - <span>2 200</span>₽
                     </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="../img/техцентр/диагностика/диагностика ходовой части.png" alt="Диагностика подвески">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Диагностика ходовой части</div>
-                            <div class="service-price">от <span>790</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R15"
+                      data-type="car-full"
+                    >
+                      R<span>15</span> - <span>2 200</span>₽
                     </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="../img/техцентр/диагностика/диагностика двигателя.png" alt="Диагностика двигателя">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Диагностика двигателя</div>
-                            <div class="service-price">от <span>1 290</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R16"
+                      data-type="car-full"
+                    >
+                      R<span>16</span> - <span>2 300</span>₽
                     </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="../img/техцентр/диагностика/диагностика трансмиссии.png" alt="Эндоскопия">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-description">Диагностика трансмиссии</div>
-                            <div class="service-price">от <span>1 990</span> ₽</div>
-                            <div class="service-more">Записаться</div>
-                        </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R17"
+                      data-type="car-full"
+                    >
+                      R<span>17</span> - <span>2 500</span>₽
                     </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R18"
+                      data-type="car-full"
+                    >
+                      R<span>18</span> - <span>2 700</span>₽
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R19"
+                      data-type="car-full"
+                    >
+                      R<span>19</span> - <span>2 800</span>₽
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R20"
+                      data-type="car-full"
+                    >
+                      R<span>20</span> - <span>3 000</span>₽
+                    </div>
+                  </div>
                 </div>
-            </div>
-
-            <!-- Brakes Price List -->
-            <div class="price-list" data-category="brakes">
-                <!-- <div class="service-row">
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="brakes1.png" alt="Замена колодок">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-price">от 1 290 ₽</div>
-                            <div class="service-points">от 26 бонусов</div>
-                            <div class="service-description">Замена тормозных колодок (передние)</div>
-                            <div class="service-more">Подробнее</div>
-                        </div>
+                <div class="configurator-table">
+                  <div class="table-header">Кроссоверы</div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell disabled"
+                      data-size="R14"
+                      data-type="suv-full"
+                    >
+                      -
                     </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="brakes2.png" alt="Замена дисков">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-price">от 1 890 ₽</div>
-                            <div class="service-points">от 38 бонусов</div>
-                            <div class="service-description">Замена тормозных дисков (передние)</div>
-                            <div class="service-more">Подробнее</div>
-                        </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell disabled"
+                      data-size="R15"
+                      data-type="suv-full"
+                    >
+                      -
                     </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="brake-fluid.png" alt="Тормозная жидкость">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-price">от 1 490 ₽</div>
-                            <div class="service-points">от 30 бонусов</div>
-                            <div class="service-description">Замена тормозной жидкости</div>
-                            <div class="service-more">Подробнее</div>
-                        </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R16"
+                      data-type="suv-full"
+                    >
+                      R<span>16</span> - <span>2 900</span>₽
                     </div>
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="brakes4.png" alt="Суппорт">
-                        </div>
-                        <div class="service-info">
-                            <div class="service-price">от 2 190 ₽</div>
-                            <div class="service-points">от 44 бонусов</div>
-                            <div class="service-description">Ремонт суппорта</div>
-                            <div class="service-more">Подробнее</div>
-                        </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R17"
+                      data-type="suv-full"
+                    >
+                      R<span>17</span> - <span>3 000</span>₽
                     </div>
-                </div> -->
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R18"
+                      data-type="suv-full"
+                    >
+                      R<span>18</span> - <span>3 200</span>₽
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R19"
+                      data-type="suv-full"
+                    >
+                      R<span>19</span> - <span>3 200</span>₽
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div
+                      class="table-cell"
+                      data-size="R20"
+                      data-type="suv-full"
+                    >
+                      R<span>20</span> - <span>3 300</span>₽
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="service-more">Записаться</div>
             </div>
-
-            <!-- Add more price lists for other categories -->
-            <div class="price-list" data-category="engine">
-                <!-- Engine services -->
-            </div>
-            <div class="price-list" data-category="exhaust">
-                <!-- Exhaust services -->
-            </div>
-            <div class="price-list" data-category="chassis">
-                <!-- Chassis services -->
-            </div>
-            <div class="price-list" data-category="transmission">
-                <!-- Transmission services -->
-            </div>
-            <div class="price-list" data-category="tires">
-                <!-- Tire services -->
-            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Background Images Carousel -->
-        <div class="background-container">
-            <div class="background active" style="background-image: url('../img/техцентр/жидкости\ и\ фильтры.png');"></div>
-            <div class="background" style="background-image: url('../img/техцентр/диагностика.jpg');"></div>
-            <div class="background" style="background-image: url('bg3.jpg');"></div>
-            <div class="background" style="background-image: url('bg4.jpg');"></div>
-            <div class="background" style="background-image: url('bg5.jpg');"></div>
-            <div class="background" style="background-image: url('bg6.jpg');"></div>
-            <div class="background" style="background-image: url('bg7.jpg');"></div>
-            <div class="background" style="background-image: url('bg8.jpg');"></div>
-        </div>
+      <!-- Background Images Carousel -->
+      <div class="background-container">
+        <div
+          class="background active"
+          style="
+            background-image: url('../img/техцентр/жидкости\ и\ фильтры.png');
+          "
+        ></div>
+        <div
+          class="background"
+          style="background-image: url('../img/техцентр/диагностика.jpg')"
+        ></div>
+        <div class="background" style="background-image: url('../img/техцентр/Тормозная\ система.jpg')"></div>
+        <div class="background" style="background-image: url('../img/техцентр/Двигатель.jpg')"></div>
+        <div class="background" style="background-image: url('../img/техцентр/Выхлопная\ система.jpg')"></div>
+        <div class="background" style="background-image: url('../img/техцентр/Ходовая\ часть.jpg')"></div>
+        <div class="background" style="background-image: url('../img/техцентр/ТО.jpg')"></div>
+        <div class="background" style="background-image: url('../img/техцентр/Шиномонтаж.jpg')"></div>
+        <div class="background" style="background-image: url('../img/техцентр')"></div>
+      </div>
 
-        <!-- Scroll Indicator -->
-        <!-- <div class="scroll-indicator">
+      <!-- Scroll Indicator -->
+      <!-- <div class="scroll-indicator">
             <div class="indicator-bar"></div>
         </div> -->
     </div>
 
     <script src="../js/teh-senter.js"></script>
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        
+      });
+    </script>
+  </body>
 </html>
