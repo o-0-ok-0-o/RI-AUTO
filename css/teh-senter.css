@@ -1,422 +1,550 @@
-@font-face{
-    font-family: 'PALUI';
-    src: url('../font/PaluiSPDemo-Bold.otf');
+@font-face {
+  font-family: "PALUI";
+  src: url("../font/PaluiSPDemo-Bold.otf");
 }
 
 @font-face {
-    font-family: 'SAMSON';
-    src: url(../font/Samson.ttf);
+  font-family: "SAMSON";
+  src: url(../font/Samson.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'PALUI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PALUI", sans-serif;
 }
 
 body {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Logo */
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 10000;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10000;
 }
 
 .logo img {
-    height: 100px;
+  height: 100px;
 }
 
 /* Menu Semi-circle */
 .menu-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    z-index: 100;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
 }
 
 .menu-semicircle {
-    width: 370px;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-    border-radius: 0 100% 100% 0 / 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 50px 10px 35px 30px rgb(0, 0, 0);
+  width: 370px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 0 100% 100% 0 / 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 50px 10px 35px 30px rgb(0, 0, 0);
 }
 
 /* Left Menu */
 .left-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-right: 50px;
-    width: 100%;
-    max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 50px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .menu-item {
-    box-sizing: border-box;
-    padding: 12px 5px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 10px;
-    /* white-space: nowrap; */
-    position: relative;
-    transform-origin: left center;
-    border: 2px solid transparent;
-}
-
-.menu-item span{
-    /* white-space: nowrap; */
+  box-sizing: border-box;
+  padding: 12px 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  /* white-space: nowrap; */
+  position: relative;
+  transform-origin: left center;
+  border: 2px solid transparent;
 }
 
 .menu-item.active {
-    background: rgba(0, 255, 0, 0.2);
-    transform: scale(1.1);
-    box-shadow: 0 0 10px #00ff00, 0 0 20px rgba(0, 255, 0, 0.5);
-    border: 2px solid #00ff00;
-    z-index: 2;
+  background: rgba(0, 255, 0, 0.2);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #00ff00, 0 0 20px rgba(0, 255, 0, 0.5);
+  border: 2px solid #00ff00;
+  z-index: 2;
 }
 
 .menu-item:hover:not(.active) {
-    background: rgba(0, 255, 0, 0.1);
-    transform: scale(1.05);
+  background: rgba(0, 255, 0, 0.1);
+  transform: scale(1.05);
 }
 
 /* Main Content */
 .main-content {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 50;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
 }
 
 .price-list {
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
-    border-radius: 20px;
-    padding: 30px;
-    width: 95%;
-    max-width: 1250px;
-    display: none;
-    flex-direction: column;
-    gap: 30px;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    position: absolute;
-    pointer-events: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-height: 90vh;
-    overflow: auto;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 95%;
+  max-width: 1250px;
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  position: absolute;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-height: 90vh;
+  overflow: auto;
 }
 
 .price-list.active {
-    opacity: 1;
-    position: relative;
-    pointer-events: auto;
+  opacity: 1;
+  position: relative;
+  pointer-events: auto;
 }
 
 .service-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .service-card {
-    background: #1f472eb8;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #1f472eb8;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .service-image {
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .service-image img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .service-info {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    line-height: 1.5;
-    position: relative;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  line-height: 1.5;
+  position: relative;
 }
 
 .service-price {
-    font-family: 'SAMSON', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 5px;
+  font-family: "SAMSON", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
 }
 
 .service-price span {
-    font-family: 'SAMSON', sans-serif;
-    font-size: 28px;
+  font-family: "SAMSON", sans-serif;
+  font-size: 28px;
 }
 
 .service-points {
-    font-size: 10px;
-    color: white;
+  font-size: 10px;
+  color: white;
 }
 
 .service-description {
-    font-size: 10px;
-    margin-top: 5px;
-    color: white;
-    min-height: 60px;
+  font-size: 10px;
+  margin-top: 5px;
+  color: white;
+  min-height: 60px;
 }
 
 .service-more {
-    padding: 3px 5px;
-    background-color: #4BAD4F;
-    color: white;
-    font-size: 12px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: .3s;
-    text-align: center;
+  padding: 3px 5px;
+  background-color: #4bad4f;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-align: center;
 }
 
 .service-more:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Background Images Carousel - Circular Animation */
 .background-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    overflow: hidden;
-    background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  background-color: black;
 }
 
 .background {
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    /* transform: scale(1.2); */
-    transition: opacity 1.6s ease, transform 1.6s ease;
-    will-change: opacity, transform;
-    pointer-events: none;
-    filter: brightness(70%);
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  /* transform: scale(1.2); */
+  transition: opacity 1.6s ease, transform 1.6s ease;
+  will-change: opacity, transform;
+  pointer-events: none;
+  filter: brightness(70%);
 }
 
 .background.active {
-    opacity: 1;
-    /* transform: scale(1); */
-    z-index: 2;
+  opacity: 1;
+  /* transform: scale(1); */
+  z-index: 2;
 }
 
 .background.prev {
-    opacity: 0;
-    /* transform: scale(0.8); */
-    z-index: 1;
-    transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 0;
+  /* transform: scale(0.8); */
+  z-index: 1;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 /* Scroll Indicator */
 .scroll-indicator {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    height: 100%;
-    width: 10px;
-    display: flex;
-    justify-content: center;
-    z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  height: 100%;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
 }
 
 .indicator-bar {
-    width: 4px;
-    height: 100px;
-    background: linear-gradient(to bottom, #00ff00, #009900);
-    border-radius: 2px;
-    margin-top: 50px;
+  width: 4px;
+  height: 100px;
+  background: linear-gradient(to bottom, #00ff00, #009900);
+  border-radius: 2px;
+  margin-top: 50px;
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-    .service-row {
-        flex-wrap: wrap;
-    }
-    
-    .service-card {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    
-    .menu-semicircle {
-        width: 250px;
-    }
+  .service-row {
+    flex-wrap: wrap;
+  }
+
+  .service-card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .menu-semicircle {
+    width: 250px;
+  }
 }
 
 @media (max-width: 768px) {
-    .menu-semicircle {
-        width: 200px;
-    }
-    
-    .left-menu {
-        padding-right: 30px;
-    }
-    
-    .service-card {
-        width: 100%;
-    }
-    
-    .price-list {
-        width: 90%;
-        padding: 20px;
-        margin-left: 50px;
-    }
-    
-    .menu-item {
-        font-size: 12px;
-        padding: 10px 15px;
-    }
+  .menu-semicircle {
+    width: 200px;
+  }
+
+  .left-menu {
+    padding-right: 30px;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  .price-list {
+    width: 90%;
+    padding: 20px;
+    margin-left: 50px;
+  }
+
+  .menu-item {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
 }
 
 /* Стили для конфигуратора шиномонтажа */
 .tire-configurator {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.configurator-section {
+  background: rgba(31, 71, 46, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.configurator-title {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+  height: 60px;
+}
+
+.configurator-tables {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.configurator-table {
+  flex: 1;
+}
+
+.table-header {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.table-row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.table-cell {
+  flex: 1;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  height: 43px;
+}
+
+.font {
+  font-family: "SAMSON", sans-serif;
+  font-size: 22px;
+}
+
+.color{
+  color: #a9fd35;
+}
+
+.table-cell:hover {
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.table-cell.selected {
+  background: rgba(0, 255, 0, 0.2);
+  box-shadow: 0 0 10px #00ff00, 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.table-cell.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Стиль для карточки ТО на всю ширину */
+.price-list-one{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+.service-card-one{
+  width: 25%;
+}
+
+.tire-price-list {
+  display: flex;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+.logo-container {
+    width: 50vw;
+    height: 50vh;
   }
   
-  .configurator-section {
-    background: rgba(31, 71, 46, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
+  .logo {
+    position: absolute;
+    left: 30px;
+    z-index: 30000;
   }
   
-  .configurator-title {
+  .logo img {
+    height: 100px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* .logo-container:hover .logo img {
+    transform: scale(1.05);
+  } */
+  
+  /* Секции */
+  .logo-sections {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 600px;
+    height: 250px;
+  }
+  
+  .logo-section {
+    position: absolute;
     color: white;
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-align: center;
-    height: 60px;
-  }
-  
-  .configurator-tables {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .configurator-table {
-    flex: 1;
-  }
-  
-  .table-header {
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-  }
-  
-  .table-row {
-    display: flex;
-    margin-bottom: 5px;
-  }
-  
-  .table-cell {
-    flex: 1;
-    padding: 10px;
-    color: white;
+    font-size: 20px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1s ease, transform 1s ease, left 1s ease, top 1s ease;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 5px;
-    height: 43px;
+    top: 30px;
+    left: 30px;
+  }
+  
+  .logo-section::after {
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: #00ff00;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+    margin-top: 4px;
   }
 
-  .table-cell span{
-    font-family: 'SAMSON', sans-serif;
-    font-size: 22px;
+  .logo-section a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .logo-sections.active{
+    z-index: 10000;
+  }
+
+  .logo-sections.active .logo-section{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* .logo-section a:hover{
+    transform: scale(1.1);
+  }*/
+
+  .logo-section:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  } 
+
+  /* .logo-container:hover .logo-sections{
+    pointer-events: all;
   }
   
-  .table-cell:hover {
-    background: rgba(0, 255, 0, 0.1);
+  .logo-container:hover .logo-section {
+    opacity: 1;
+    transform: scale(1);
+  } */
+  
+  /* Позиции секций */
+  .logo-sections.active .logo-section.left {
+    top: 200px;
+    left: 30px;
   }
   
-  .table-cell.selected {
-    background: rgba(0, 255, 0, 0.2);
-    box-shadow: 0 0 10px #00ff00, 0 0 20px rgba(0, 255, 0, 0.5);
+  .logo-sections.active .logo-section.center {
+    top: 130px;
+    left: 250px;
   }
   
-  .table-cell.disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+  .logo-sections.active .logo-section.right {
+    top: 30px;
+    left: 350px;
   }
   
-  /* Стиль для карточки ТО на всю ширину */
-  .full-width-card {
-    grid-column: span 4;
+  /* Блюр */
+  .logo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 60px 60px, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.95) 100%);
+    opacity: 0;
+    transition: opacity 1.5s ease, z-index 2s ease;
+    pointer-events: none;
   }
-
-  .tire-price-list{
-    display: flex;
-    padding: 10px;
-    overflow-x: hidden;
+  
+  .logo-overlay.active{
+    opacity: 1;
+    z-index: 1000;
   }
+  /* .logo-container:hover .logo-overlay {
+    
+  } */
