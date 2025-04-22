@@ -192,6 +192,11 @@ body {
   margin-bottom: 5px;
 }
 
+.service-info span{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
 .service-price span {
   font-family: "SAMSON", sans-serif;
   font-size: 28px;

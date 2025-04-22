@@ -147,12 +147,17 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("hi");
     });
   });
-  document.querySelector('.logo').addEventListener('mouseenter', () => {
-    document.querySelector('.logo-sections').classList.add('active')
-    document.querySelector('.logo-overlay').classList.add('active')
-  })
-  document.querySelector('.logo-sections').addEventListener("mouseleave", () => {
-    document.querySelector('.logo-sections').classList.toggle('active')
-    document.querySelector('.logo-overlay').classList.remove('active')
-  })
+  const logo = document.querySelector(".logo");
+  const logoSections = document.querySelector(".logo-sections");
+  const logoOverlay = document.querySelector(".logo-overlay");
+
+  logo.addEventListener("mouseenter", () => {
+    logoSections.classList.add("active");
+    logoOverlay.classList.add("active");
+  });
+
+  logoSections.addEventListener("mouseleave", () => {
+    logoSections.classList.remove("active"); // заменил toggle на remove для симметрии
+    logoOverlay.classList.remove("active");
+  });
 });
